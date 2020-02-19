@@ -5,12 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import co.ke.echirchir.dwellerz.api.repositories.ApartmentsRepository;
+import co.ke.echirchir.dwellerz.api.repositories.LocationsRepository;
 import co.ke.echirchir.dwellerz.api.repositories.TenantsRepository;
 import springfox.documentation.annotations.ApiIgnore;
 
 @SpringBootApplication
 @ApiIgnore
-@EnableJpaRepositories(basePackageClasses = {ApartmentsRepository.class, TenantsRepository.class})
+@EnableJpaRepositories(basePackageClasses = {ApartmentsRepository.class, TenantsRepository.class, LocationsRepository.class})
 public class DwellerzApplication {
 
 	public static void main(String[] args) {

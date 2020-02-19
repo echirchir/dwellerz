@@ -26,4 +26,23 @@ public class HomeController{
 
         return "contact-us";
     }
+
+    @GetMapping("/locations/all")
+    public String locations(){
+
+        return "locations";
+    }
+
+    @GetMapping("/careers")
+    public String careers(){
+
+        return "careers";
+    }
+
+    @GetMapping("/blog")
+    public String blog(){
+
+        return "blog";
+    }
+
 }
