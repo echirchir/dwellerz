@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/home.css}" />
+    <script th:src="@{../js/home.js}"></script> 
+    <title>Dwellerz - for home, office seekers!</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" th:href="@{/}">DWELLERZ</a>
+      </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/about-us}">About Us</a></li>
+      <li><a th:href="@{/apartments/all}">Apartments</a></li>
+      <li><a th:href="@{/contact-us}">Contact Us</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-collapse -->
+</nav>
+<div class= "banner-sektion banner-overlay ">
+  <div class="container text-center">
+      <div class="col-md-12">
+          <div class="banner-heading ">
+              <h2>Your next move doesn't have to be painful! </h2>
+              <P>Find apartments, condos, office space with a click of a button</P>
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary site-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>    
+</div>
+<div class="blog-section paddingTB60 bg-grey ">
+  <div class="container">
+    <div class="row text-center">
+    <div class="col-md-12">   
+      <div class="site-heading ">
+                  
+          <h3>Popular Property Options</h3>
+          <p>Whatever you are looking for, we got it!</p>
+          <div class="border text-center "></div>
+        </div>
+  </div> 
+</div>
+    <div class="row ">
+        <div class="col-sm-6 col-md-4">
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-responsive" alt="">
+              </div>
+              <div class="blog-box-content paddingTLR35">
+                <h4>Office Space for your startup</h4>
+                <p>You can find your next office exactly where you want it to be. </p>
+
+                
+              </div>
+            </div>
+          </div> <!-- End Col -->					
+          <div class="col-sm-6 col-md-4">
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="https://images.unsplash.com/photo-1496252223350-db9ad24b108c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-responsive" alt="">
+              </div>
+              <div class="blog-box-content paddingTLR35">
+                <h4>Becoming a home owner starts here!</h4>
+                <p>Are you tired of living in overpopulated areas? Find your next family home! </p>   
+              </div>
+            </div>
+          </div> <!-- End Col -->	
+          <div class="col-sm-6 col-md-4">
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="https://images.unsplash.com/photo-1482728019867-b1a9a19576f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-responsive" alt="">
+              </div>
+              <div class="blog-box-content paddingTLR35">
+                <h4>Apartments are not going anywhere!</h4>
+                <p>Find an affordable apartment, find out information, before making a decision! </p>
+              </div>
+            </div>
+          </div> <!-- End Col -->
+  </div>
+</div>
+</div>
+<div class="Features-section paddingTB60 bg-dgrey ">
+  <div class="container">
+  <div class="row text-center ">
+            
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Location</h4>
+            <p>You know where you want to live next! </p>
+          </div>
+        </div> <!-- End Col -->	
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Price</h4>
+            <p>You know what you can afford, certainly! </p>
+          </div>
+        </div> <!-- End Col -->
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Security</h4>
+            <p>You cannot afford to gamble with security! </p>
+          </div>
+        </div> <!-- End Col -->
+      </div>
+  </div>
+</div>
+<div class="footer-section">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+           <h2>Find almost anything here.. </h2>
+        </div>
+        <div class="col-md-12">
+            Get the latest open properties and be the first one to go check it out!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="col-md-3 footer-one">
+      <h5>About Us </h5>
+        <p>we are a small versatile team of tech enthusiasts who are tired of wasting time and money!</p>
+    </div>
+    <div class="col-md-3 footer-two">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/apartments/all}">Apartments</a></li>
+          <li><a th:href="@{/tenants/all}">Tenants</a></li>
+          <li><a th:href="@{/about-us}">About Us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 footer-three">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/locations/all}">Locations</a></li>
+          <li><a th:href="@{/careers/all}">Careers</a></li>
+          <li><a th:href="@{/media}">Press Release</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 footer-four">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/}">Home</a></li>
+          <li><a th:href="@{/subscribe}">Subscribe</a></li>
+          <li><a th:href="@{/blog}">Blog</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+  <div class="footer-bottom">
+  <div class="container">
+        <div class="row">
+          <div class="col-sm-6 ">
+            <div class="copyright-text">
+              <p>CopyRight © 2020 Dwellerz All Rights Reserved</p>
+            </div>
+          </div> <!-- End Col -->
+          <div class="col-sm-6 ">
+                <div class="bigpixi-footer-social pull-right">
+    <ul>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://twitter.com/">
+            <img class="bigpixi-footer-social__icon" alt="Twitter" title="Twitter" src="http://simpleicons.org/icons/twitter.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.facebook.com/">
+            <img class="bigpixi-footer-social__icon" alt="Facebook" title="Facebook" src="http://simpleicons.org/icons/facebook.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.youtube.com/">
+            <img class="bigpixi-footer-social__icon" alt="YouTube" title="YouTube" src="http://simpleicons.org/icons/youtube.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.instagram.com/">
+            <img class="bigpixi-footer-social__icon" alt="Instagram" title="Instagram" src="http://simpleicons.org/icons/instagram.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.pinterest.com/">
+            <img class="bigpixi-footer-social__icon" alt="Pinterest" title="Pinterest" src="http://simpleicons.org/icons/pinterest.svg">
+</a>          </li>
+    </ul>
+            </div>						
+                        
+          </div> <!-- End Col -->
+        </div>
+      </div>
+</div>
+</div> 
+
+<script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js/"></script>
+<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
