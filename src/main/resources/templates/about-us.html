@@ -4,51 +4,204 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" th:href="@{/../css/main.css}" />
-    <title>Dwellerz - About Us</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/home.css}" />
+    <title>Dwellerz - about us</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <a class="navbar-brand" th:href="@{/}">Dwellerz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link" th:href="@{/}">Home
-                    
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" th:href="@{/about-us}">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/contact-us}">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/swagger-ui.html}">Developer</a>
-            </li>
-        </ul>
-        </div>
-    </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" th:href="@{/}">DWELLERZ</a>
+      </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a th:href="@{/}">Home</a></li>
+      <li class="active"><a th:href="@{/about-us}">About Us</a></li>
+      <li><a th:href="@{/apartments/all}">Apartments</a></li>
+      <li><a th:href="@{/contact-us}">Contact Us</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-collapse -->
 </nav>
-
-<header class="masthead text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Stop searching, start living!</h1>
+<div class= "banner-sektion banner-overlay ">
+  <div class="container text-center">
+      <div class="col-md-12">
+          <div class="banner-heading ">
+              <h2>Your next move doesn't have to be painful! </h2>
+              <P>Find apartments, condos, office space with a click of a button</P>
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary site-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>    
+</div>
+<div class="blog-section paddingTB60 bg-grey ">
+  <div class="container">
+    <div class="row text-center">
+    <div class="col-md-12">   
+        <div class="site-heading ">
+                  
+          <h3>ABOUT US</h3>
+          <p>So, who are we really? Let us indulge you!</p>
+          <div class="border text-center "></div>
         </div>
-        
+     </div> 
+    </div>
+    <div class="row ">
+        <!-- about us section-->
+        <div class="bg-light">
+            <div class="container py-5">
+              <div class="row h-100 align-items-center py-5">
+                <div class="col-lg-6">
+                    <h4>A quick story</h4>
+                  <p class="lead text-muted mb-0"><strong>Dwellerz</strong> was founded in the year 2020 from personal experience of our developers after spending
+                      so much time and money (paying agents) to find an apartment. 
+                  </p>
+
+                  <p class="lead text-muted mb-0">To solve this problem once and for all, a solution came up after several nights of programming and design phases! 
+                </p>
+
+                <p class="lead text-muted mb-0">Today, Dwellerz is available to the public to help make life easier especially for those in search of new places to live! Enjoy!! 
+                </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt="" class="img-fluid"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="Features-section paddingTB60 bg-dgrey ">
+  <div class="container">
+  <div class="row text-center ">
+            
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Location</h4>
+            <p>You know where you want to live next! </p>
+          </div>
+        </div> <!-- End Col -->	
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Price</h4>
+            <p>You know what you can afford, certainly! </p>
+          </div>
+        </div> <!-- End Col -->
+        <div class="col-sm-6 col-md-4">
+          <div class="feature-box">
+            <span class="glyphicon glyphicon-cog icon"></span>
+            <h4>Security</h4>
+            <p>You cannot afford to gamble with security! </p>
+          </div>
+        </div> <!-- End Col -->
+      </div>
+  </div>
+</div>
+<div class="footer-section">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+           <h2>Find almost anything here.. </h2>
+        </div>
+        <div class="col-md-12">
+            Get the latest open properties and be the first one to go check it out!
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="col-md-3 footer-one">
+      <h5>About Us </h5>
+        <p>we are a small versatile team of tech enthusiasts who are tired of wasting time and money!</p>
+    </div>
+    <div class="col-md-3 footer-two">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/apartments/all}">Apartments</a></li>
+          <li><a th:href="@{/tenants/all}">Tenants</a></li>
+          <li><a th:href="@{/about-us}">About Us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 footer-three">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/locations/all}">Locations</a></li>
+          <li><a th:href="@{/careers}">Careers</a></li>
+          <li><a th:href="@{/media}">Press Release</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 footer-four">
+      <h5>Information </h5>
+      <ul>
+          <li><a th:href="@{/swagger-ui.html}">Developers</a></li>
+          <li><a th:href="@{/subscribe}">Subscribe</a></li>
+          <li><a th:href="@{/blog}">Blog</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+  <div class="footer-bottom">
+  <div class="container">
+        <div class="row">
+          <div class="col-sm-6 ">
+            <div class="copyright-text">
+              <p>CopyRight © 2020 Dwellerz All Rights Reserved</p>
+            </div>
+          </div> <!-- End Col -->
+          <div class="col-sm-6 ">
+                <div class="bigpixi-footer-social pull-right">
+    <ul>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://twitter.com/">
+            <img class="bigpixi-footer-social__icon" alt="Twitter" title="Twitter" src="http://simpleicons.org/icons/twitter.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.facebook.com/">
+            <img class="bigpixi-footer-social__icon" alt="Facebook" title="Facebook" src="http://simpleicons.org/icons/facebook.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.youtube.com/">
+            <img class="bigpixi-footer-social__icon" alt="YouTube" title="YouTube" src="http://simpleicons.org/icons/youtube.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.instagram.com/">
+            <img class="bigpixi-footer-social__icon" alt="Instagram" title="Instagram" src="http://simpleicons.org/icons/instagram.svg">
+</a>          </li>
+        <li class="bigpixi-footer-social__list-item">
+          <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.pinterest.com/">
+            <img class="bigpixi-footer-social__icon" alt="Pinterest" title="Pinterest" src="http://simpleicons.org/icons/pinterest.svg">
+</a>          </li>
+    </ul>
+            </div>						
+                        
+          </div> <!-- End Col -->
+        </div>
+      </div>
+</div>
+</div> 
 
-<!-- include javascript -->
 <script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js/"></script>
 <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
