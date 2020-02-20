@@ -12,6 +12,16 @@
     <link rel="stylesheet" type="text/css" th:href="@{/../css/ionicons.min.css}" />
     <link rel="stylesheet" type="text/css" th:href="@{/../css/owl.carousel.min.css}" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/normalize.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/fontello.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/pe-icon-7-stroke.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/helper.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/bootstrap-select.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/icheck.min_all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/owl.theme.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/owl.transitions.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/lightslider.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/../css/responsive.css}" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <title>Dwellerz - property details</title>
@@ -47,15 +57,15 @@
     <div class="container">
         <div class="row">
             <div class="page-head-content">
-                <h1 class="page-title">Super nice villa </h1>               
+                              
             </div>
         </div>
     </div>
 </div>
-
  <!-- start details view -->
 
- <div class="content-area single-property" style="background-color: #FCFCFC;">&nbsp;
+ <div class="content-area single-property" style="background-color: #FCFCFC;">
+
     <div class="container">   
 
         <div class="clearfix padding-top-40" >
@@ -66,27 +76,12 @@
                         <div class="light-slide-item">            
                             <div class="clearfix">
                                 <div class="favorite-and-print">
-                                    <a class="add-to-fav" href="#login-modal" data-toggle="modal">
-                                        <i class="fa fa-star-o"></i>
-                                    </a>
-                                    <a class="printer-icon " href="javascript:window.print()">
-                                        <i class="fa fa-print"></i> 
-                                    </a>
+                                    
                                 </div> 
 
+                                <img th:src="@{/../img/property1.jpg}">
                                 <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                                    <li data-thumb="assets/img/property-1/property1.jpg"> 
-                                        <a href="#" ><img th:src="@{/../img/property-1.jpg}"></a>
-                                    </li>
-                                    <li data-thumb="assets/img/property-1/property2.jpg"> 
-                                        <a href="#" ><img th:src="@{/../img/property-2.jpg}"></a>
-                                    </li>
-                                    <li data-thumb="assets/img/property-1/property3.jpg"> 
-                                        <a href="#" ><img th:src="@{/../img/property-3.jpg}"></a>
-                                    </li>
-                                    <li data-thumb="assets/img/property-1/property4.jpg"> 
-                                        <a href="#" ><img th:src="@{/../img/property-4.jpg}"></a>
-                                    </li>                                         
+                                                                           
                                 </ul>
                             </div>
                         </div>
@@ -143,12 +138,12 @@
 
                             <h4 class="s-property-title">Features</h4>                            
                             <ul>
-                                <li><a href="properties.html">Swimming Pool</a></li>   
-                                <li><a href="properties.html">3 Stories</a></li>
-                                <li><a href="properties.html">Central Cooling</a></li>
-                                <li><a href="properties.html">Jog Path 2</a></li>
-                                <li><a href="properties.html">2 Lawn</a></li>
-                                <li><a href="properties.html">Bike Path</a></li>
+                                <li><a href="/">Swimming Pool</a></li>   
+                                <li><a href="/">3 Stories</a></li>
+                                <li><a href="/">Central Cooling</a></li>
+                                <li><a href="/">Jog Path 2</a></li>
+                                <li><a href="/">2 Lawn</a></li>
+                                <li><a href="/">Bike Path</a></li>
                             </ul>
 
                         </div>
@@ -158,66 +153,16 @@
                             <h4 class="s-property-title">Share width your friends </h4> 
                             <div class="roperty-social">
                                 <ul> 
-                                    <li><a title="Share this on dribbble " href="#"><img src="assets/img/social_big/dribbble_grey.png"></a></li>                                         
-                                    <li><a title="Share this on facebok " href="#"><img src="assets/img/social_big/facebook_grey.png"></a></li> 
-                                    <li><a title="Share this on delicious " href="#"><img src="assets/img/social_big/delicious_grey.png"></a></li> 
-                                    <li><a title="Share this on tumblr " href="#"><img src="assets/img/social_big/tumblr_grey.png"></a></li> 
-                                    <li><a title="Share this on digg " href="#"><img src="assets/img/social_big/digg_grey.png"></a></li> 
-                                    <li><a title="Share this on twitter " href="#"><img src="assets/img/social_big/twitter_grey.png"></a></li> 
-                                    <li><a title="Share this on linkedin " href="#"><img src="assets/img/social_big/linkedin_grey.png"></a></li>                                        
+                                    <li><a title="Share this on dribbble" th:href="@{/}"><img th:src="@{/../img/dribbble_grey.png}"></a></li>                                         
+                                    <li><a title="Share this on facebok " th:href="@{/}"><img th:src="@{/../img/facebook_grey.png}"></a></li> 
+                                    <li><a title="Share this on delicious " th:href="@{/}"><img th:src="@{/../img/delicious_grey.png}"></a></li> 
+                                    <li><a title="Share this on tumblr " th:href="@{/}"><img th:src="@{/../img/tumblr_grey.png}"></a></li> 
+                                    <li><a title="Share this on digg " th:href="@{/}"><img th:src="@{/../img/digg_grey.png}"></a></li> 
+                                    <li><a title="Share this on twitter " th:href="@{/}"><img th:src="@{/../img/twitter_grey.png}"></a></li> 
+                                    <li><a title="Share this on linkedin " th:href="@{/}"><img th:src="@{/../img/linkedin_grey.png}"></a></li>                                        
                                 </ul>
                             </div>
                         </div>
-                        <!-- End video area  -->
-                    </div>
-                </div>
-
-                <div class="similar-post-section padding-top-40"> 
-                    <div id="prop-smlr-slide_0"> 
-                        <div class="box-two proerty-item">
-                            <div class="item-thumb">
-                                <a href="#" ><img th:src="@{/../img/property-1.jpg}"></a>
-                            </div>
-                            <div class="item-entry overflow">
-                                <h5><a href="#"> Super nice villa </a></h5>
-                                <div class="dot-hr"></div>
-                                <span class="pull-left"><b> Area :</b> 120m </span>
-                                <span class="proerty-price pull-right"> $ 300,000</span> 
-                            </div>
-                        </div> 
-                        <div class="box-two proerty-item">
-                            <div class="item-thumb">
-                                <a href="#" ><img th:src="@{/../img/property-2.jpg}"></a>
-                            </div>
-                            <div class="item-entry overflow">
-                                <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                <div class="dot-hr"></div>
-                                <span class="pull-left"><b> Area :</b> 120m </span>
-                                <span class="proerty-price pull-right"> $ 300,000</span> 
-                            </div>
-                        </div> 
-                        <div class="box-two proerty-item">
-                            <div class="item-thumb">
-                                <a href="#" ><img th:src="@{/../img/property-3.jpg}"></a>
-                            </div>
-                            <div class="item-entry overflow">
-                                <h5><a href="property-1.html"> Super nice villa </a></h5>
-                                <div class="dot-hr"></div>
-                                <span class="pull-left"><b> Area :</b> 120m </span>
-                                <span class="proerty-price pull-right"> $ 300,000</span> 
-                            </div>
-                        </div> 
-                        <div class="box-two proerty-item">
-                            <div class="item-thumb">
-                                <a href="#" ><img th:src="@{/../img/property-4.jpg}"></a>
-                            </div>
-                            <div class="item-entry overflow">
-                                <h5><a href="#"> Super nice villa </a></h5>
-                                <div class="dot-hr"></div>
-                                <span class="pull-left"><b> Area :</b> 120m </span>
-                                <span class="proerty-price pull-right"> $ 300,000</span> 
-                            </div>
-                        </div> 
                     </div>
                 </div>
             </div>
@@ -306,12 +251,12 @@
 
                                 </div>
                                 <div class="dealer-section-space">
-                                    <span>Dealer information</span>
+                                    <span>Agent / Owner Information</span>
                                 </div>
                                 <div class="clear">
                                     <div class="col-xs-4 col-sm-4 dealer-face">
                                         <a href="">
-                                            <img th:src="@{/../img/client-face1.png" class="img-circle">
+                                            <img th:src="@{/../img/client-face1.png}" class="img-circle">
                                         </a>
                                     </div>
                                     <div class="col-xs-8 col-sm-8 ">
@@ -350,173 +295,6 @@
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default sidebar-menu wow fadeInRight animated" >
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Smart search</h3>
-                        </div>
-                        <div class="panel-body search-widget">
-                            <form action="" class=" form-inline"> 
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <input type="text" class="form-control" placeholder="Key word">
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="col-xs-6">
-
-                                            <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select Your City">
-
-                                                <option>New york, CA</option>
-                                                <option>Paris</option>
-                                                <option>Casablanca</option>
-                                                <option>Tokyo</option>
-                                                <option>Marraekch</option>
-                                                <option>kyoto , shibua</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-6">
-
-                                            <select id="basic" class="selectpicker show-tick form-control">
-                                                <option> -Status- </option>
-                                                <option>Rent </option>
-                                                <option>Boy</option>
-                                                <option>used</option>  
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label for="price-range">Price range ($):</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[0,450]" id="price-range" ><br />
-                                            <b class="pull-left color">2000$</b> 
-                                            <b class="pull-right color">100000$</b>                                                
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label for="property-geo">Property geo (m2) :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[50,450]" id="property-geo" ><br />
-                                            <b class="pull-left color">40m</b> 
-                                            <b class="pull-right color">12000m</b>                                                
-                                        </div>                                            
-                                    </div>
-                                </fieldset>                                
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label for="price-range">Min baths :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[250,450]" id="min-baths" ><br />
-                                            <b class="pull-left color">1</b> 
-                                            <b class="pull-right color">120</b>                                                
-                                        </div>
-
-                                        <div class="col-xs-6">
-                                            <label for="property-geo">Min bed :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[250,450]" id="min-bed" ><br />
-                                            <b class="pull-left color">1</b> 
-                                            <b class="pull-right color">120</b>
-
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <div class="checkbox">
-                                                <label> <input type="checkbox" checked> Fire Place</label>
-                                            </div> 
-                                        </div>
-
-                                        <div class="col-xs-6">
-                                            <div class="checkbox">
-                                                <label> <input type="checkbox"> Dual Sinks</label>
-                                            </div>
-                                        </div>                                            
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label> <input type="checkbox" checked> Swimming Pool</label>
-                                            </div>
-                                        </div>  
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label> <input type="checkbox" checked> 2 Stories </label>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label><input type="checkbox"> Laundry Room </label>
-                                            </div>
-                                        </div>  
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label> <input type="checkbox"> Emergency Exit</label>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label>  <input type="checkbox" checked> Jog Path </label>
-                                            </div>
-                                        </div>  
-                                        <div class="col-xs-6"> 
-                                            <div class="checkbox">
-                                                <label>  <input type="checkbox"> 26' Ceilings </label>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </fieldset>
-
-                                <fieldset class="padding-5">
-                                    <div class="row">
-                                        <div class="col-xs-12"> 
-                                            <div class="checkbox">
-                                                <label>  <input type="checkbox"> Hurricane Shutters </label>
-                                            </div>
-                                        </div>  
-                                    </div>
-                                </fieldset>
-
-                                <fieldset >
-                                    <div class="row">
-                                        <div class="col-xs-12">  
-                                            <input class="button btn largesearch-btn" value="Search" type="submit">
-                                        </div>  
-                                    </div>
-                                </fieldset>                                     
-                            </form>
                         </div>
                     </div>
 
@@ -601,7 +379,35 @@
       </div>
 </div>
 </div> 
+<script th:src="@{/../js/modernizr-2.6.2.min.js}"></script>
+<script th:src="@{/../js/bootstrap-select.min.js}"></script>
+<script th:src="@{/../js/bootstrap-hover-dropdown.js}"></script>
+<script th:src="@{/../js/easypiechart.min.js}"></script>
+<script th:src="@{/../js/jquery.easypiechart.min.js}"></script>
+<script th:src="@{/../js/owl.carousel.min.js}"></script>
+<script th:src="@{/../js/wow.js}"></script>
+<script th:src="@{/../js/icheck.min.js}"></script>
+<script th:src="@{/../js/price-range.js}"></script>
+<script th:src="@{/../js/lightslider.min.js}"></script>
+<script th:src="@{/../js/main.js}"></script>
 
+<script>
+    $(document).ready(function () {
+
+        $('#image-gallery').lightSlider({
+            gallery: true,
+            item: 1,
+            thumbItem: 9,
+            slideMargin: 0,
+            speed: 500,
+            auto: true,
+            loop: true,
+            onSliderLoad: function () {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+    });
+</script>
 <script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js/"></script>
 <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
